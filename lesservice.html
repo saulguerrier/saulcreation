@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commander un service</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!--navbar-->
+    <nav class="navbar">
+      <div class="logo">
+          <img src="images/logo.png">
+    </div>
+        <button class="menu-toggle" id="menu-toggle">
+          ☰
+        </button>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html"><i class="fa fa-fw fa-home"></i>Accueil</a></li>
+          <li><a href="apropos.html"><i class="fa fa-fw fa-user"></i>À propos</a></li>
+          <li><a href="nosservices.html"><i class="fa fa-fw fa-book"></i>Services</a></li>
+          <li><a href="contact.php"><i class="fa fa-fw fa-envelope"></i>Contact</a></li>
+          <li><a href="pdg.html"><i class="fa fa-fw fa-address-book"></i>A propos du PDG</a></li> 
+          <li><a href="portfolio.html"><i class="fa fa-fw fa-bookmark"></i>Portfolio</a></li>
+        </ul>
+      </nav>
+      <!--banner-->
+      <div id="banner">
+        <h1>Demander un service </h1>
+        <p>Remplir ce formulaire pour demander un service.</p>
+    </div>
+
+    <form class="service-form" action="#" method="post">
+        <h2>Demande de Services</h2>
+      
+        <label for="name">Nom</label>
+        <input type="text" id="name" name="name" required>
+      
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      
+        <fieldset>
+          <legend>Services souhaités</legend>
+          
+          <label><input type="checkbox" name="services" value="creation-site"> Création de site internet</label>
+          <label><input type="checkbox" name="services" value="marketing-digital"> Marketing digital</label>
+          <label><input type="checkbox" name="services" value="monetisation"> Monétisation de site internet</label>
+          <label><input type="checkbox" name="services" value="graphisme"> Graphisme</label>
+        </fieldset>
+      
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Décris ton besoin ici..."></textarea>
+      
+        <button type="submit">Envoyer la demande</button>
+      </form>
+
+    <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <h1>
+     Qui sommes-nous?
+      </h1><br>
+      <p>Saul création est une agence web spécialisée dans : la création de site internet, le marketing digital, la monétisation de site internet, le graphisme et design.</p>
+    </div>
+    <div class="container">
+      <h1>Informations de contact</h1><br>
+      <p><i class="fa fa-fw fa-home"></i>#9, Rue Albert Jode, Silo O, Delmas 75, Port-au-Prince, Haiti.</p>
+      <p><i class="fa fa-fw fa-phone"></i>(509) 4940-6597/ 5529-7431</p>
+      <p><i class="fa fa-fw fa-envelope"></i>saulcreation24@gmail.com</p>
+    </div>
+    <div class="container">
+      <h1>Liens importants</h1><br>
+      <a href="politiquedeconfidentialite.html">* Politique de confidentialité</a><br>
+      <a href="conditionsutilisation.html">* Conditions d'utilisation</a><br>
+      <a href="faq.html">* FAQ</a><br>
+    </div>
+  </footer>
+  <div class="copyright">
+    <p>&copy; 2025 Saul Création. Tous droits réservés | Site web développé par Saul Guerrier</p>
+  </div>
+      <script src="js/script.js"></script>
+</body>
+</html>

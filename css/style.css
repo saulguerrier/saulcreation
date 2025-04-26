@@ -1,0 +1,463 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    background: white;
+    color: #01457a;
+}
+/*container formulaire*/
+.container {
+  max-width: 900%;
+  margin: auto;
+  padding: 20px;
+}
+  
+/*navbar*/
+.navbar {
+    height: 50px;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #cfcfcf;
+    box-shadow: rgba(0,0,0,0.7);
+    color: #01457a;
+  }
+  .navbar .logo img{
+    width: 100px;
+    height: 40px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: #01457a;
+    transition: color 0.3s;
+  }
+  
+  .nav-links li a:hover {
+    color: #f51957;
+  }
+  
+  /* Bouton menu hamburger */
+  .menu-toggle {
+    display: none;
+    font-size: 20px;
+    background: #cfcfcf;
+    border: none;
+    color: #01457a;
+    cursor: pointer;
+  }
+  .darkmode-btn {
+    background: #f51957;
+    border: 1px solid white;
+    color: #01457a;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  /* Responsive */
+  @media screen and (max-width: 700px) {
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      background-color: white;
+      width: 100%;
+      font-size: 20px;
+      line-height: 1px;
+      position: absolute;
+      top: 60px;
+      left: 0;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  
+    .menu-toggle {
+      display: block;
+    }
+  }
+
+  /* Footer */
+.footer {
+  float: left;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+    background-color: #01457a;
+    color: white;
+    
+  }
+  .footer .container{
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.006);
+  margin: 10px 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  justify-content: center;
+  }
+  .footer h1{
+    color: #f51957;
+    font-size: 20px;
+  }
+  .footer p{
+    font-size: 15px;
+  }
+  .footer a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  .footer a:hover{
+    color: #f51957;
+    cursor: pointer;
+  }
+  .copyright{
+    float: left;
+    width: 100%;
+    padding: 10px;
+    justify-content: center;
+    margin-bottom: 30px;
+    background: #01457a;
+    color: white;
+    
+  }
+  .copyright p{
+    align-items: center;
+    font-size: 15px;
+  }
+  
+
+  /* Formulaire */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #01457a;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  form input, form textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #01457a;
+    border-radius: 4px;
+  }
+
+  form button {
+    background: #f51957;
+    color: white;
+    padding: 12px ;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+form button:hover {
+  background: #f51957;
+}
+
+#form-message {
+  color: #01457a;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+  /*page apropos*/
+#banner{
+  float: left;
+  width: 100%;
+  background-image: url(../images/site\ 3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 50px 5%;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: multiply;
+}
+#banner h1{
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+#banner p{
+  color: white;
+  text-align: center;
+  font-size: 20px;
+}
+
+/*textcontent*/
+#text-content{
+  float: left;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  margin-top: 50px;
+}
+#text-content{
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.008);
+  padding: 20px;
+  margin: 10px 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  justify-content: center; 
+}
+#text-content img{
+  justify-content: center;
+  width: 100%;
+  border-radius: 30px;
+  padding: 20px;
+}
+#text-content h2{
+  color: #f51957;
+  margin: 20px;
+}
+#text-content p{
+  margin: 20px;
+}
+#text-content a{
+  text-decoration: none;
+  padding: 10px;
+  margin: 20px;
+  background-color: #01457a;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.about-content{
+  float: left;
+}
+
+.about-content h2 {
+  margin-top: 40px;
+  color: #f51957;
+}
+
+.about-content ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.about-content ul li::before {
+  content: "• ";
+  color: #f51957;
+  font-weight: bold;
+}
+
+  /*page nos services*/
+
+#services {
+  float: left;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  margin: 10px 10px;
+  padding-top: 30px;
+  text-align: center;
+}
+.service-cards{
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.008);
+  padding: 20px;
+  margin: 10px 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  justify-content: center;
+}
+.service-cards:hover{
+  transform: translate(-5px) scale(1.02);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+#services h2{
+  color:#f51957;
+}
+#services p{
+  color: #01457a;
+}
+#services a{
+  padding: 7px;
+  font-size: 14px;
+  background-color: #01457a;
+  color: white;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+@media screen and (max-width: 500px) {
+  .service-cards h2 {
+    font-size: 1.2em;
+  }
+  .service-cards p {
+    font-size: 0.95em;
+  }
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  justify-content: center;
+  
+}
+
+input, textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+button {
+  padding: 10px;
+  background-color: #01457a;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #f51957;
+}
+
+/*page demande de service*/
+.service-form {
+  max-width: 500px;
+  margin: 30px auto;
+  background: gray;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+  font-family: 'Arial', sans-serif;
+}
+
+.service-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #01457a;
+}
+
+.service-form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.service-form input[type="text"],
+.service-form input[type="email"],
+.service-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.service-form fieldset {
+  border: none;
+  margin-top: 15px;
+}
+
+.service-form fieldset label {
+  font-weight: normal;
+  display: block;
+  margin-top: 8px;
+}
+
+.service-form button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: #01457a;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.service-form button:hover {
+  background-color: #f51957;
+}
+
+/*page contact*/
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.contact-form button {
+  width: 100%;
+  background-color: #f51957;
+  color: white;
+  border: none;
+  padding: 14px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #f51957;
+}
+#portfolio{
+  float: left;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  display: block;
+  padding-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 50px;
+  
+  border-radius: 40px;
+}
+#portfolio a{
+  text-decoration: none;
+  font-size: 20px;
+  margin-left: 30px;
+  color: #01457a;
+}
+#portfolio a:hover{
+  color: #f51957;
+}
+#portfolio h2{
+  color: #f51957;
+  font-size: 30px;
+}
